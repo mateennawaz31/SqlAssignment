@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/createBtn"
+        android:text="Create Database">
+
+    </Button>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameET"
+        android:hint="@string/enter_name_here"
+        android:layout_below="@id/createBtn"
+        android:nextFocusDown="@id/addressET">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addressET"
+        android:hint="@string/enter_address_here"
+        android:layout_below="@id/nameET">
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addValuesBtn"
+        android:layout_below="@id/addressET"
+        android:text="@string/add_values_to_db">
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getValuesBtn"
+        android:layout_below="@id/addValuesBtn"
+        android:text="@string/get_values">
+    </Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getValuesTV"
+        android:layout_below="@id/getValuesBtn">
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RV"
+        android:layout_below="@id/getValuesTV">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>

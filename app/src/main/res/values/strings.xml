@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sql Assignment</string>
+    <string name="enter_the_name_here">enter_the_name_here</string>
+    <string name="enter_the_address_here">enter_the_address_here</string>
+    <string name="add_values_to_db">add_values_to_db</string>
+    <string name="click_to_display_values">CLick to display values</string>
+    <string name="enter_name_here">enter_name_here</string>
+    <string name="enter_address_here">enter_address_here</string>
+    <string name="get_values">get_values</string>
+</resources>
